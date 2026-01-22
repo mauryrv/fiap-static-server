@@ -16,6 +16,10 @@ app.get('/health', (req, res) => {
     res.send('OKKK!');
 });
 
+app.get('/api/v1/getname', (req, res) => {
+    res.send('Maury!');
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 }); 
